@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--TODO ACABAR DE FAZER O CSS-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    <!--<link rel="stylesheet" href="style.css" />-->
+  </head>
+  <body>
+    <div class="container-geral">
+      <h1>Escalar Jogador</h1>
+      <form id="create" method="post">
+        <div class="name">
+          <label for="name">Nome =></label>
+          <input type="text" id="name" required />
+        </div>
+        <div class="numero">
+          <label for="num">Camisa =></label>
+          <input type="text" id="num" required />
+        </div>
+        <div class="cadastrar">
+          <button onclick="cadastrar()" id="botao">Cadastrar</button>
+        </div>
+      </form>
+      <form action="" method="post" id="del">
+        <div class="numero">
+          <label for="nume">Numero</label>
+          <input type="text" id="nume" />
+        </div>
+        <button id="rem" onclick="remover()">Remover</button>
+      </form>
+
+      <button onclick="mostrarTime()">Mostrar escalacao</button>
+      <section id="team"></section>
+    </div>
+  </body>
+</html>
