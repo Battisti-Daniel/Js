@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="top-container" >
+        <button class="start" id="start">Start</button>
+        <input type="text" id="player1" value="" disabled>
+        <input type="text" id="player2" value="" disabled>
+      <div class="pontuacao">
+        <input type="text" id="pontuacao1" value="0" disabled>
+        <input type="text" id="pontuacao2" value="0" disabled>
+      </div>
+    </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <div class="main-container" id="main container">
+        <div class="slices-container-top" id="slices-container">
+          <span id="0-0" class="field " ></span>
+          <span id="0-1" class="field "></span>
+          <span id="0-2" class="field "></span>
+        </div>
+        <div class="slices-container-mid" id="slices-container">
+          <span id="1-0" class="field"></span>
+          <span id="1-1" class="field"></span>
+          <span id="1-2" class="field"></span>
+        </div>
+        <div class="slices-container-bottom" id="slices-container">
+          <span id="2-0" class="field"></span>
+          <span id="2-1" class="field"></span>
+          <span id="2-2" class="field"></span>
+        </div>
+      </div>
+    </section>
+    <div class="reiniciar-container" id="reiniciar-container">
+      <div class="player-win">
+        <span class="name" id = name></span>
+      </div>
+      <div class="mid" id = "mid">
+        <button class="continuar" id="continuar" >Continuar</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
